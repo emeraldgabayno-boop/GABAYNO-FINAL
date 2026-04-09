@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chanel Products</title>
+  <link rel="stylesheet" href="products.css">
+</head>
+<body>
+
+
+ <nav class="navbar">
+    <div class="logo">
+      <img src="image/emelogo.jpg" alt="Logo">
+      <span>CHANEL</span>
+    </div>
+
+    <ul class="nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="product.html">Product</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="#">Help Us</a></li>
+    </ul>
+  </nav>
+
+
+
+<div class="category-menu">
+  <button onclick="showSection('bags')">BAGS</button>
+  <button onclick="showSection('perfume')">PERFUME</button>
+  <button onclick="showSection('shoes')">SHOES</button>
+  <button onclick="showSection('makeup')">MAKEUP</button>
+  <button onclick="showSection('jewelry')">JEWELRY</button>
+  <button onclick="showSection('skincare')">SKINCARE</button>
+</div>
+
+<!-- BAGS -->
+<div id="bags" class="product-section">
+<h2>CHANEL BAGS</h2>
+
+<div class="product-grid">
+
+<div class="flip-card">
+  <div class="flip-inner">
+    <div class="front">
+      <img src="image/chanelbag1.jpg">
+      <h3>Classic Double Flap</h3>
+      <p>₱563,883.89</p>
+    </div>
+    <div class="back">
+      <p>Premium leather Chanel bag</p>
+      <p>₱563,883.89</p>
+      <button onclick="add()">ADD</button>
+    </div>
+  </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-inner">
+    <div class="front">
+      <img src="image/chanelbag5.jpg">
+      <h3>Chanel 25 White</h3>
+      <p>₱455,000</p>
+    </div>
+    <div class="back">
+      <p>Elegant white Chanel bag</p>
+      <p>₱455,000</p>
+      <button onclick="add()">ADD</button>
+    </div>
+  </div>
+</div>
+
+</div>
+</div>
+
+<!-- PERFUME -->
+<div id="perfume" class="product-section">
+  <span class="back-btn" onclick="backToMenu()">← Back</span>
+  <h2>CHANEL PERFUME</h2>
+  <div class="product-grid">
+    <div class="card">
+      <img src="image/perfume0.jpg">
+      <h3>Chanel Chance Eau de Parfum</h3>
+      <p>₱10,575.52</p>
+    </div>
+    <div class="card">
+      <img src="image/perfume2.jpg">
+      <h3>Chanel Coco Eau de Parfum</h3>
+      <p>₱14,109.96</p>
+    </div>
+  </div>
+</div>
+
+<!-- SHOES -->
+<div id="shoes" class="product-section">
+  <span class="back-btn" onclick="backToMenu()">← Back</span>
+  <h2>CHANEL SHOES</h2>
+  <div class="product-grid">
+    <div class="card">
+      <img src="image/shoes1.jpg">
+      <h3>CC Logo Sneakers</h3>
+      <p>₱189,801.66</p>
+    </div>
+    <div class="card">
+      <img src="image/shoes2.jpg">
+      <h3>Mixed Fiber Sneakers</h3>
+      <p>₱34,401.92</p>
+    </div>
+  </div>
+</div>
+
+<!-- MAKEUP -->
+<div id="makeup" class="product-section">
+  <span class="back-btn" onclick="backToMenu()">← Back</span>
+  <h2>CHANEL MAKEUP</h2>
+  <div class="product-grid">
+    <div class="card">
+      <img src="image/makeup1.jpg">
+      <h3>Rouge Allure Lipstick</h3>
+      <p>₱3,200</p>
+    </div>
+    <div class="card">
+      <img src="image/makeup2.jpg">
+      <h3>Les Beiges Foundation</h3>
+      <p>₱4,500</p>
+    </div>
+  </div>
+</div>
+
+<!-- JEWELRY -->
+<div id="jewelry" class="product-section">
+  <span class="back-btn" onclick="backToMenu()">← Back</span>
+  <h2>CHANEL JEWELRY</h2>
+  <div class="product-grid">
+    <div class="card">
+      <img src="image/earring1.jpg">
+      <h3>Chanel Earrings</h3>
+      <p>₱45,000</p>
+    </div>
+    <div class="card">
+      <img src="image/watch1.jpg">
+      <h3>Chanel Watch</h3>
+      <p>₱320,000</p>
+    </div>
+  </div>
+</div>
+
+<!-- SKINCARE -->
+<div id="skincare" class="product-section">
+  <span class="back-btn" onclick="backToMenu()">← Back</span>
+  <h2>CHANEL SKINCARE</h2>
+  <div class="product-grid">
+    <div class="card">
+      <img src="image/skincare1.jpg">
+      <h3>Chanel Hydra Beauty</h3>
+      <p>₱12,500</p>
+    </div>
+    <div class="card">
+      <img src="image/skincare2.jpg">
+      <h3>Chanel Sublimage</h3>
+      <p>₱25,000</p>
+    </div>
+  </div>
+</div>
+
+<script>
+  function showSection(id) {
+    document.querySelectorAll('.product-section').forEach(sec => sec.style.display = 'none');
+    document.querySelector('.category-menu').style.display = 'none';
+    document.getElementById(id).style.display = 'block';
+  }
+
+  function backToMenu() {
+    document.querySelectorAll('.product-section').forEach(sec => sec.style.display = 'none');
+    document.querySelector('.category-menu').style.display = 'block';
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,293 @@
+﻿<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Emerald Gabayno | Luxury Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body {
+    font-family:'Montserrat', sans-serif;
+    background:linear-gradient(135deg,#fdf6f9,#f8e8ef);
+    color:#333;
+    padding-top:100px;
+}
+
+/* NAVBAR */
+nav {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 80px;
+    background:white;
+    box-shadow:0 5px 20px rgba(0,0,0,0.05);
+    z-index:1000;
+}
+
+.logo {
+    display:flex;
+    align-items:center;
+    font-weight:700;
+    letter-spacing:5px;
+}
+
+.logo img {
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    margin-right:10px;
+}
+
+nav ul {
+    display:flex;
+    gap:25px;
+    list-style:none;
+}
+
+nav a {
+    text-decoration:none;
+    color:#333;
+    font-size:14px;
+    letter-spacing:2px;
+}
+
+/* HERO */
+.hero {
+    text-align:center;
+    padding:100px 20px 60px;
+}
+
+.hero img {
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    box-shadow:0 15px 40px rgba(0,0,0,0.2);
+    margin-bottom:15px;
+}
+
+/* NAME UNDER IMAGE */
+.hero-name {
+    font-family:'Playfair Display', serif;
+    font-size:22px;
+    letter-spacing:2px;
+    margin-bottom:20px;
+    color:#d46a92;
+}
+
+.hero h1 {
+    font-family:'Playfair Display', serif;
+    font-size:48px;
+    margin-bottom:15px;
+}
+
+.hero p {
+    max-width:600px;
+    margin:auto;
+    color:#666;
+    line-height:1.8;
+}
+
+/* SECTION */
+.section {
+    padding:60px 40px;
+}
+
+.section-title {
+    text-align:center;
+    font-family:'Playfair Display', serif;
+    font-size:32px;
+    margin-bottom:40px;
+}
+
+/* CARDS */
+.cards {
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+}
+
+.card {
+    width:260px;
+    padding:30px;
+    border-radius:20px;
+    backdrop-filter:blur(10px);
+    background:rgba(255,255,255,0.7);
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    text-align:center;
+    transition:0.3s;
+}
+
+.card:hover {
+    transform:scale(1.05);
+}
+
+.card h3 {
+    color:#d46a92;
+    margin-bottom:10px;
+    font-family:'Playfair Display', serif;
+}
+
+/* SKILLS */
+.skill {
+    text-align:left;
+    margin-bottom:10px;
+}
+
+.bar {
+    height:6px;
+    background:#eee;
+    border-radius:10px;
+    margin-top:5px;
+}
+
+.bar div {
+    height:100%;
+    background:#d46a92;
+    border-radius:10px;
+}
+
+/* CONTACT */
+.contact-btn {
+    display:block;
+    margin:8px 0;
+    padding:8px;
+    background:#d46a92;
+    color:white;
+    border-radius:20px;
+    text-decoration:none;
+    font-size:13px;
+}
+
+.contact-btn i {
+    margin-right:6px;
+}
+
+/* FOOTER */
+footer {
+    text-align:center;
+    padding:40px 20px;
+}
+
+.social a {
+    margin:0 10px;
+    font-size:26px;
+    color:black;
+}
+
+.project-note {
+    margin-top:10px;
+    font-size:14px;
+    color:#555;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">
+        <img src="image/emelogo.jpg">
+        CHANEL
+    </div>
+
+    <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="product.html">PRODUCT</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <img src="image/rald.jpg">
+
+    <div class="hero-name">Emerald Sosa Gabayno</div>
+
+    <h1>Luxury Digital Designer</h1>
+
+    <p>
+I create refined digital experiences inspired by high fashion and elegance.
+    Every design is crafted with precision, simplicity, and premium aesthetics.    </p>
+</section>
+
+<section class="section">
+    <h2 class="section-title">My Expertise</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Education</h3>
+            <p>BS Information Technology</p>
+            <p>ICT Strand Graduate</p>
+        </div>
+
+        <div class="card">
+            <h3>Skills</h3>
+
+            <div class="skill">
+                HTML & CSS
+                <div class="bar"><div style="width:90%"></div></div>
+            </div>
+
+            <div class="skill">
+                Graphic Design
+                <div class="bar"><div style="width:85%"></div></div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Interests</h3>
+            <p>Fashion Styling</p>
+            <p>Photography</p>
+            <p>Luxury Branding</p>
+        </div>
+
+        <div class="card">
+            <h3>Contact</h3>
+
+            <a href="https://maps.google.com/?q=Bongabong, Mimaropa, Philippines" target="_blank" class="contact-btn">
+                <i class="fas fa-map-marker-alt"></i> LOCATION - Bongabong, Mimaropa
+            </a>
+
+            <a href="tel:+639123456789" class="contact-btn">
+                <i class="fas fa-phone"></i> CONTACT - +63 912 345 6789
+            </a>
+
+            <a href="mailto:emeraldchanel.com" class="contact-btn">
+                <i class="fas fa-envelope"></i> EMAIL - emeraldchanel.com
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <div class="social">
+        <a href="https://www.tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="mailto:emerald@example.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+    </div>
+
+    <p class="project-note">"This Website is for project purpose only"</p>
+</footer>
+
+</body>
+</html>
